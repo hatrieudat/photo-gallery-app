@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.header {
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4)), url(../../Assets/bg_landscape_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .fontHeader {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        cursor: default;
+
+        text-shadow: 0 2px 0 #000;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    .btn-link:hover {
+        color: red;
+        opacity: .5;
+    }
+}

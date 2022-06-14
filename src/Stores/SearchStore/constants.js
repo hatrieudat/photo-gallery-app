@@ -1,0 +1,2 @@
+export const SET_SEARCH_INPUT = 'SET_SEARCH_INPUT'
+export const SET_SEARCH = 'SET_SEARCH'

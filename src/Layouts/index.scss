@@ -1,0 +1,73 @@
+.imageWrapper {
+    column-count: 4;
+    column-gap: 5px;
+
+    img {
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+.myMasonryGrid {
+    display: -webkit-box;
+    /* Not needed if autoprefixing */
+    display: -ms-flexbox;
+    /* Not needed if autoprefixing */
+    display: flex;
+    /* gutter size offset */
+    width: auto;
+}
+
+.myMasonryGridColumn {
+    /* gutter size */
+    background-clip: padding-box;
+
+    img {
+        /* change img to reference your elements you put in <Masonry> */
+        height: auto;
+        border-radius: 10px;
+        padding: 2px;
+    }
+}
+
+.toastContainter {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.animated {
+    opacity: 0;
+    animation: fadeinup 1.5s;
+    animation-fill-mode: both;
+}
+
+.modal-backdrop.show {
+    opacity: .6 !important;
+}
+
+@keyframes fadeinup {
+    from {
+        transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .imageWrapper {
+        column-count: 2;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .imageWrapper {
+        column-count: 1;
+    }
+}
