@@ -4,7 +4,7 @@ The goal of this project is to use the Flickr API to create a simple photo galle
 - Objectives: a search bar at the top, results displayed as a Mansory Layout and infinite scrolling; function to enlarge images, download images.
 - Technologies: FlickrAPI, Bootstrap 5, react-bootstrap, react-masonry-css, bootstrap-icons, React Router v6, React and some Hooks: useState, useEffect, useCallback, useContext, useReducer.
 
-Demo: [Photo Gallery App](https://vercel.com/hatrieudat/photo-gallery-app)
+Demo: [Photo Gallery App](https://photo-gallery-app-omega.vercel.app)
 
 ## Available Scripts
 
